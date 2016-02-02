@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/foundation-icons.css">
   </head>
   <body>
-  
+
   <div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper> 
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
           <h3 class="text-center">Navigation</h3>
           <ul class="menu vertical" data-drilldown>
@@ -52,7 +52,7 @@
                  <img src="assets/images/logo.svg">
               </div>
 
-              <div class="small-4 medium-4 columns"> 
+              <div class="small-4 medium-4 columns">
                   <a class="menu-icon float-right" data-open="mainMenu"></a>
                </div>
             </div>
@@ -67,16 +67,18 @@
     <section class="content room">
         <div class="row">
             <div class="large-6 columns large-centered">
-              <ul class="horizontal menu expanded" data-magellan>
-                <li><a href="#room-info">Information</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#booking">Book Now</a></li>
-              </ul>
+              <nav class="roomMenu">
+                  <ul class="horizontal menu expanded" data-magellan>
+                    <li><a href="#room-info">Information</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                  </ul>
+              </nav>
             </div>
         </div>
 
 
-      
+
         <section id="room-info" data-magellan-target="room-info">
             <div class="row">
                   <p class="text-center">Nullam lorem eros, viverra eget nulla nec, sagittis suscipit felis. Vestibulum ut semper lacus. Aliquam erat volutpat. Praesent suscipit justo blandit metus mollis, eget maximus libero ornare. Sed consectetur congue nunc, non dapibus tortor rutrum sed. Etiam sed sodales orci, et tristique dui. Praesent eget metus nibh. Vivamus non venenatis libero, id euismod mi. Praesent rhoncus lorem id diam aliquam, placerat dignissim dolor suscipit. Mauris accumsan dui non turpis consectetur, et placerat erat pretium. Aenean in ullamcorper sem, tempor pellentesque magna. Nulla tempor est velit, sit amet dictum orci efficitur eu.</p>
@@ -124,7 +126,7 @@
           </div>
 
             <div class="row columns">
-                <label>Name: 
+                <label>Name:
                     <input type="text" placeholder="Your Name" required>
                     <span class="form-error">
                         <i class="fi-alert"></i> The name field is mandatory!!
@@ -132,7 +134,7 @@
                 </label>
             </div>
             <div class="row columns">
-                <label>Email: 
+                <label>Email:
                     <input type="text" placeholder="Your Email" required pattern="email">
                     <span class="form-error">
                         <i class="fi-alert"></i> The email field is mandatory!!
@@ -140,7 +142,7 @@
                 </label>
             </div>
             <div class="row columns">
-                <label>Phone Number: 
+                <label>Phone Number:
                     <input type="text" placeholder="Your Phone Number" required pattern="number">
                     <span class="form-error">
                         <i class="fi-alert"></i> The phone field is mandatory!!
@@ -148,7 +150,7 @@
                 </label>
             </div>
             <div class="row columns">
-                <label>Message: 
+                <label>Message:
                     <textarea placeholder="Your Message"></textarea>
                 </label>
             </div>
@@ -219,7 +221,7 @@
 
 
 
-   
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
