@@ -1,0 +1,255 @@
+.is-reveal-open .off-canvas-wrapper {
+	overflow-x:visible;
+}
+
+h2 {
+	color:$primary-color;
+	font-size: rem-calc(42);
+	margin: rem-calc(20 0);
+}
+
+
+/** Off canvas **/
+
+div.off-canvas {
+	height: 100%;
+
+	a, h3 {
+		color:$white;
+	}
+	.is-drilldown-submenu{
+	 background-color: 	darken($primary-color, 20);
+	}
+}
+
+.promo-video,
+.promo {
+	position:relative;
+	
+	#overlay {
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#29669e+0,2a3b5a+100&0.7+0,0.7+100 */
+		background: -moz-linear-gradient(top,  rgba(41,102,158,0.7) 0%, rgba(42,59,90,0.7) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(41,102,158,0.7) 0%,rgba(42,59,90,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(41,102,158,0.7) 0%,rgba(42,59,90,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b329669e', endColorstr='#b32a3b5a',GradientType=0 ); /* IE6-9 */
+	}
+
+	.header-content {
+		background-color:transparent;
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+	}
+	.headliner {
+		left:0;
+		top:50%;
+		position: absolute;
+		width:100%;
+		transform: translateY(-50%);
+		h1 {
+			border-top:2px solid $white;
+			border-bottom:2px solid $white;
+			color:$white;
+			text-transform:uppercase;
+		}
+	}
+}
+
+.menu-icon,
+.menu-icon:hover {
+
+	width:rem-calc(60);
+	height: rem-calc(36);
+	margin-top: rem-calc(25);
+	&::after {
+		background-color:$white;
+		height:8px;
+		box-shadow: 0 28px 0 white, 0 14px 0 white;
+	}
+}
+
+section.rooms {
+	padding: rem-calc(30 0);
+	div.room-image {
+		position: relative;
+
+		.room-title {
+			position: absolute;
+			bottom:0;
+			left:0;
+			padding-left:rem-calc(20);
+
+			h3 {
+				color:$white;
+			}
+		}
+	}
+	div.room-content {
+		background-color:$white;
+		padding:rem-calc(20);
+	}
+}
+
+.button {
+	@include button-style($secondary-color, darken($secondary-color, 10), $white);
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: rem-calc(16);
+	margin: rem-calc(20 0);
+}
+
+
+/*** Separator Image**/
+
+.separator-image {
+	height:200px;
+	background-position: center center;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	@include breakpoint(medium) {
+		height:350px;
+		background-size:cover;
+	}
+	@include breakpoint(large) {
+		background-size:cover;
+	}
+}
+.pool-image {
+	background-image:url(../assets/images/separators/small/separator01-image.jpg);
+	@include breakpoint(medium) {
+		background-image:url(../assets/images/separators/medium/separator01-image.jpg);
+	}
+	@include breakpoint(large) {
+		background-image:url(../assets/images/separators/large/separator01-image.jpg);
+	}
+}
+.bar-image {
+	background-image:url(../assets/images/separators/small/separator02-image.jpg);
+	@include breakpoint(medium) {
+		background-image:url(../assets/images/separators/medium/separator02-image.jpg);
+	}
+	@include breakpoint(large) {
+		background-image:url(../assets/images/separators/large/separator02-image.jpg);
+	}
+}
+.rooms-image {
+	background-image:url(../assets/images/separators/small/separator03-image.jpg);
+	@include breakpoint(medium) {
+		background-image:url(../assets/images/separators/medium/separator03-image.jpg);
+	}
+	@include breakpoint(large) {
+		background-image:url(../assets/images/separators/large/separator03-image.jpg);
+	}
+}
+
+/*** About Us Section **/
+
+.about-us-gallery {
+	@include breakpoint(medium) {
+		height:rem-calc(560);
+		position:relative;
+	}
+	@include breakpoint(medium) {
+		height:rem-calc(420);
+	}
+	.empty {
+		@include breakpoint(medium) {
+			height:rem-calc(560);
+		}
+		@include breakpoint(medium) {
+			height:rem-calc(420);
+		}
+	}
+	div.content-about-us {
+		@include breakpoint(medium) {
+			position: absolute;
+			top:rem-calc(20);
+			left:0;
+			width:100%;
+		}
+	}
+
+}
+.bluebg {
+	background-color:$primary-color;
+}
+h2.white {
+	color:$white;
+}
+
+section.booking {
+	padding:rem-calc(50);
+}
+
+footer {
+	background-color: $primary-color;
+	padding-top: rem-calc(30);
+	color: $white;
+
+	.menu {
+		a {
+			color:$white;
+		}
+	} 
+	.contact-information {
+		li {
+			position: relative;
+			height: 100px;
+			padding-left: 60px;
+			padding-top: 35px;
+			&:first-child {
+				padding-top: 22px;
+			}
+			i {
+				font-size: rem-calc(60);
+				position: absolute;
+				top:0; left:0;
+			}
+		}
+	}
+	.social {
+		i {
+			font-size: rem-calc(60);
+		}
+	}
+	p.copyright {
+		padding: rem-calc(20 0);
+		background-color: darken($primary-color, 5);
+		margin:0;
+	}
+
+}
+
+/*** INTERNAL PAGES **/
+
+
+section.content {
+	padding: rem-calc(30 0);
+}
+/* Services**/
+section.services .content-text{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

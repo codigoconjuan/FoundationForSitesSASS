@@ -1,0 +1,228 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Room 01</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation-icons.css">
+  </head>
+  <body>
+  
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper> 
+      <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+          <h3 class="text-center">Navigation</h3>
+          <ul class="menu vertical" data-drilldown>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="has-submenu is-drilldown-submenu-parent"><a href="rooms.html">Rooms</a>
+                  <ul class="menu vertical">
+                      <li><a href="room-01.html">Room 01</a></li>
+                      <li><a href="room-02.html">Room 02</a></li>
+                      <li><a href="room-03.html">Room 03</a></li>
+                      <li><a href="room-04.html">Room 04</a></li>
+                      <li><a href="room-05.html">Room 05</a></li>
+                      <li><a href="room-06.html">Room 06</a></li>
+                  </ul>
+                </li>
+                <li><a href="contactus.html">Contact Us</a></li>
+
+          </ul>
+
+      </div> <!--.off-canvas -->
+
+
+  <div class="off-canvas-content" data-off-canvas-content>
+    <section class="promo-video">
+        <div id="overlay" ></div>
+        <img src="assets/images/featured/about-us.jpg">
+
+        <div class="headliner hide-for-small-only">
+          <div class="column row">
+            <h1 class="text-center">Room 01</h1>
+          </div>
+        </div> <!--.headliner-->
+
+        <div class="header-content">
+            <div class="row">
+              <div class="small-8 medium-4 columns">
+                 <img src="assets/images/logo.svg">
+              </div>
+
+              <div class="small-4 medium-4 columns"> 
+                  <a class="menu-icon float-right" data-open="mainMenu"></a>
+               </div>
+            </div>
+        </div> <!--.header-content -->
+    </section>
+
+
+    <div class="row column show-for-small-only">
+        <h2>Room 01</h2>
+    </div>
+
+    <section class="content room">
+        <div class="row">
+            <div class="large-6 columns large-centered">
+              <ul class="horizontal menu expanded" data-magellan>
+                <li><a href="#room-info">Information</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#booking">Book Now</a></li>
+              </ul>
+            </div>
+        </div>
+
+
+      
+        <section id="room-info" data-magellan-target="room-info">
+            <div class="row">
+                  <p class="text-center">Nullam lorem eros, viverra eget nulla nec, sagittis suscipit felis. Vestibulum ut semper lacus. Aliquam erat volutpat. Praesent suscipit justo blandit metus mollis, eget maximus libero ornare. Sed consectetur congue nunc, non dapibus tortor rutrum sed. Etiam sed sodales orci, et tristique dui. Praesent eget metus nibh. Vivamus non venenatis libero, id euismod mi. Praesent rhoncus lorem id diam aliquam, placerat dignissim dolor suscipit. Mauris accumsan dui non turpis consectetur, et placerat erat pretium. Aenean in ullamcorper sem, tempor pellentesque magna. Nulla tempor est velit, sit amet dictum orci efficitur eu.</p>
+
+                  <p class="text-center">Maecenas porta ullamcorper leo, nec consequat nisl imperdiet sit amet. Maecenas luctus ultrices libero, in feugiat erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis volutpat pretium. Sed nisi dolor, rutrum eget elit at, iaculis pretium eros. Mauris vitae semper mauris. Phasellus feugiat odio diam, quis vulputate orci egestas quis. Phasellus placerat pharetra luctus. Phasellus in urna augue. Nunc magna magna, hendrerit vitae ante ut, tincidunt gravida odio. Pellentesque gravida ultricies pulvinar.</p>
+            </div>
+        </section>
+
+        <section id="gallery" data-magellan-target="gallery" class="bluebg gallery">
+              <div class="row">
+                  <h2 class="white text-center">Gallery</h2>
+                    <div class="row small-up-2 medium-up-4 ">
+                        <div class="column">
+                          <img src="assets/images/gallery/thumbnail/room01-01.jpg" alt="" class="thumbnail">
+                        </div>
+                        <div class="column">
+                          <img src="assets/images/gallery/thumbnail/room01-02.jpg" alt="" class="thumbnail">
+                        </div>
+                        <div class="column">
+                          <img src="assets/images/gallery/thumbnail/room01-03.jpg" alt="" class="thumbnail">
+                        </div>
+                        <div class="column">
+                          <img src="assets/images/gallery/thumbnail/room01-04.jpg" alt="" class="thumbnail">
+                        </div>
+                  </div>
+              </div>
+        </section>
+
+        <!-- Booking section -->
+        <section class="booking row" id="booking" data-magellan-target="booking" >
+            <div class="large-8 large-centered columns text-center">
+              <h2>Book Now</h2>
+              <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent a tortor vulputate tellus lacinia sagittis. Donec varius quam magna, ut tristique ipsum gravida non. Mauris tincidunt tellus nec rhoncus dictum. Suspendisse non varius est.</p>
+              <a data-open="modalBook" class="button">Book Now</a>
+            </div>
+        </section>
+
+    <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+        <h2 class="text-center">Booking Form</h2>
+
+        <form data-abide novalidate >
+
+          <div class="alert callout" style="display:none;" data-abide-error>
+              <p><i class="fi-alert"></i> There´re some problems in your form!  </p>
+          </div>
+
+            <div class="row columns">
+                <label>Name: 
+                    <input type="text" placeholder="Your Name" required>
+                    <span class="form-error">
+                        <i class="fi-alert"></i> The name field is mandatory!!
+                    </span>
+                </label>
+            </div>
+            <div class="row columns">
+                <label>Email: 
+                    <input type="text" placeholder="Your Email" required pattern="email">
+                    <span class="form-error">
+                        <i class="fi-alert"></i> The email field is mandatory!!
+                    </span>
+                </label>
+            </div>
+            <div class="row columns">
+                <label>Phone Number: 
+                    <input type="text" placeholder="Your Phone Number" required pattern="number">
+                    <span class="form-error">
+                        <i class="fi-alert"></i> The phone field is mandatory!!
+                    </span>
+                </label>
+            </div>
+            <div class="row columns">
+                <label>Message: 
+                    <textarea placeholder="Your Message"></textarea>
+                </label>
+            </div>
+            <div class="row columns">
+                <input type="submit" class="button" value="Submit">
+
+                <button class="button success" type="reset" value="Reset">Reset</button>
+            </div>
+
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                  <span aria-hidden="true">&times;</span>
+            </button>
+        </form>
+    </div>
+    <!-- END BOOKING-->
+    </section>
+
+    <footer>
+        <div class="row">
+            <nav class="large-5 columns">
+                <ul class="vertical menu large-horizontal">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="contact-information large-3 columns">
+              <ul class="no-bullet vertical">
+                  <li><i class="fi-marker"></i> <span>842 State Street East New Albany, IN 47150</span></li>
+                  <li><i class="fi-telephone"></i> <span>+1-202-555-0145</span></li>
+                  <li><i class="fi-mail"></i> <span>contact@hotel&spa.com</span></li>
+              </ul>
+            </div>
+            <div class="about-us large-4 columns">
+                <h4>About Us</h4>
+                <p>Etiam mauris leo, vulputate a euismod ut, tincidunt ac nisi. Mauris nec convallis diam, vel varius augue. Cras faucibus mauris in nibh convallis aliquet.</p>
+
+                <ul class="menu social align-right">
+                    <li>
+                      <a href="http://www.twitter.com">
+                          <i class="fi-social-twitter"></i>
+                      </a>
+                    </li>
+                     <li>
+                      <a href="http://www.facebook.com">
+                          <i class="fi-social-facebook"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      <p class="text-center copyright">All Rights Reserved Hotel & Spa 2015.</p>
+
+    </footer>
+
+    </div> <!--.off-canvas-content-->
+
+    </div> <!--off-canvas-wrapper-inner-->
+
+    </div> <!--off-canvas-wrapper-->
+
+
+
+
+
+
+
+
+   
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
